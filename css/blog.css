@@ -1,0 +1,41 @@
+.blog {
+    background-color: #F5F5F5;
+}
+.blog-card{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.blog-card a {
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.blog-card a:hover {
+    color: #0078FF;
+    text-decoration: none;
+}
+
+.card-footer img {
+    border-radius: 50%;
+    width: 20%;
+}
+
+.category{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: 0; bottom: 0;
+    top:-15px;
+}
+.category-text {
+    display: inline-block;
+    padding: 7px 15px;
+    overflow: hidden;
+    background-color: #0078ff;
+    border-radius: 4px;
+    margin: 0;
+    
+}
+.category-text h6{
+    font-size: 0.75rem;
+    margin: 0;
+}

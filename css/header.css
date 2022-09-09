@@ -1,0 +1,203 @@
+.header {
+  background-image: url('../images/hero-bg.jpg');
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-wid {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  padding: 0.25rem;
+}
+
+.nav-color {
+  color: white;
+}
+.nav-links{
+    text-transform: uppercase;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-links li{
+    padding: 1rem;
+}
+.nav-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.header nav ul li a {
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.header nav ul li a::before {
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease-in;
+}
+
+.header nav ul li:hover a::before , .nav-item a.active::before{
+    display: block;
+    content: "";
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+  }
+
+  
+.dropd{
+  font-size: 0.75rem;
+}
+
+.header nav ul li a:hover {
+   color: white;
+}
+
+.slider h1{
+    font-size: 4rem;
+}
+
+.line-1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    
+}
+.line-1::before {
+    content: "";
+    animation: typewriter 10s ease-in-out infinite;
+}
+.line-1::after {
+    content: "|";
+    animation: blinkTextCursor 0.3s ease-in-out infinite;
+    color: rgba(255, 255, 255, 1);
+}
+
+.to-top{
+  background-color: #0078FF;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+}
+
+
+@keyframes typewriter{
+    /*designer developer freelancer photographer*/
+    1.35%{content: "D"}
+    2.70%{content: "De"}
+    4.05%{content: "Des"}
+    5.40%{content: "Desi"}
+    6.75%{content: "Desig"}
+    8.10%{content: "Design"}
+    9.45%{content: "Designe"}
+    10.80%{content: "Designer"}
+    12.15%{content: "Designe"}
+    13.50%{content: "Design"}
+    14.85%{content: "Desig"}
+    16.20%{content: "Desi"}
+    17.55%{content: "Des"}
+    18.90%{content: "De"}
+    20.25%{content: "Dev"}
+    21.60%{content: "Deve"}
+    22.95%{content: "Devel"}
+    24.30%{content: "Develo"}
+    25.65%{content: "Develop"}
+    27.00%{content: "Develope"}
+    28.35%{content: "Developer"}
+    29.70%{content: "Develope"}
+    31.05%{content: "Develop"}
+    32.40%{content: "Develo"}
+    33.75%{content: "Devel"}
+    35.10%{content: "Deve"}
+    36.45%{content: "Dev"}
+    37.80%{content: "De"}
+    39.15%{content: "D"}
+    40.50%{content: ""}
+    41.85%{content: "F"}
+    43.20%{content: "Fr"}
+    44.55%{content: "Fre"}
+    45.90%{content: "Free"}
+    47.25%{content: "Freel"}
+    48.60%{content: "Freela"}
+    49.95%{content: "Freelan"}
+    51.30%{content: "Freelanc"}
+    52.65%{content: "Freelance"}
+    54.00%{content: "Freelancer"}
+    55.35%{content: "Freelancer"}
+    56.70%{content: "Freelance"}
+    58.05%{content: "Freelanc"}
+    59.40%{content: "Freelan"}
+    60.75%{content: "Freela"}
+    62.10%{content: "Freel"}
+    63.45%{content: "Free"}
+    64.80%{content: "Fre"}
+    66.15%{content: "Fr"}
+    67.50%{content: "F"}
+    68.85%{content: ""}
+    70.20%{content: "P"}
+    71.55%{content: "Ph"}
+    72.90%{content: "Pho"}
+    74.25%{content: "Phot"}
+    75.60%{content: "Photo"}
+    76.95%{content: "Photog"}
+    78.30%{content: "Photogr"}
+    79.65%{content: "Photogra"}
+    81.00%{content: "Photograp"}
+    82.35%{content: "Photograph"}
+    83.70%{content: "Photographe"}
+    85.05%{content: "Photographer"}
+    86.40%{content: "Photographe"}
+    87.75%{content: "Photograph"}
+    89.10%{content: "Photograp"}
+    90.45%{content: "Photogra"}
+    91.80%{content: "Photogr"}
+    93.15%{content: "Photog"}
+    94.50%{content: "Photo"}
+    95.85%{content: "Phot"}
+    97.20%{content: "Pho"}
+    98.55%{content: "Ph"}
+    99.90%{content: "P"}
+    100.00%{content: ""}
+}
+@keyframes blinkTextCursor{
+  from{color: rgba(255, 255, 255, 0);}
+  to{color: rgba(255, 255, 255, 0.75);}
+}
+/*
+.navbar-nav .nav-link.active::before {
+    display: block;
+    content: "";
+    width: 65%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}*/

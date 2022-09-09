@@ -1,0 +1,36 @@
+.about {
+  background-color: #f5f5f5;
+  padding: 3.5rem;
+}
+
+.about-card {
+  padding: 3rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+.about-card img {
+  border-radius: 7px;
+}
+.about-p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.about-h{
+    width: fit-content;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.about-h::after{
+    content: "";
+    background-color: #0D6EFD;
+    display: block;
+    height: 3px;
+    width: 75%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.skill-prog .progress {
+    background-color: #cde1f8;
+    border-radius: 0;
+    height: 0.7rem;
+}
